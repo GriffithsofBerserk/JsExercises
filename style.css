@@ -1,0 +1,12 @@
+.baslik{
+    align-items: center;
+    position:absolute;
+    display:flex;
+    right:40rem;
+}
+.grades{
+    position:absolute;
+    top:20%;
+    left:40rem;
+    align-items:center;
+}

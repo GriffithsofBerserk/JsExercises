@@ -1,11 +1,11 @@
 'use strict';
 
-var x = document.getElementById('x').value;
-var y = document.getElementById('y').value;
+let x = prompt("X i girin");
+let y = prompt("Y yi girin");
 
 console.log(x);
 console.log(y);
-document.getElementById('.y').addEventListener('.click', function(){
+
     if (x>y) {
         alert("X büyük");
     }else if(x===y){
@@ -13,4 +13,3 @@ document.getElementById('.y').addEventListener('.click', function(){
     }else{
         alert("y büyük");
     }
-});
