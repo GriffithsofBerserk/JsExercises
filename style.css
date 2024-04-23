@@ -10,3 +10,13 @@
     left:40rem;
     align-items:center;
 }
+.counters{
+    position:absolute;
+    top:30%;
+    left:40rem;
+    align-items:center;
+}
+.counter{
+    position:relative;
+    left:2.5rem;
+}

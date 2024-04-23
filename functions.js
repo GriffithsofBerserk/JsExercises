@@ -29,3 +29,22 @@ const FatArrow3 = (lastName, email) => { let a = (`Merhaba ${lastName} ${email}`
 console.log(a);
 return a;}
 FatArrow2("LASTNAME FAT ARROW2","email2");
+
+
+let counter = 0;
+let counterEl = document.querySelector('.counter');
+let yükselt = document.querySelector('.yükselt');
+let düsür = document.querySelector('.düsür');
+
+function yükselt1(){
+    counterEl.textContent = counter +=1;
+    console.log("yükselt");
+}
+
+function düsür1(){
+    counterEl.textContent = counter -=1;
+    console.log("düsür");
+}
+
+yükselt.addEventListener('click', yükselt1)
+düsür.addEventListener('click',düsür1)
