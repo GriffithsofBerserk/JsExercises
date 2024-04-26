@@ -31,7 +31,7 @@ return a;}
 FatArrow2("LASTNAME FAT ARROW2","email2");
 
 
-let counter = 0;
+let counter = localStorage.getItem('counter') ? Number(localStorage.getItem('counter')) : 0;
 let counterEl = document.querySelector('.counter');
 let yükselt = document.querySelector('.yükselt');
 let düsür = document.querySelector('.düsür');
@@ -39,11 +39,17 @@ let düsür = document.querySelector('.düsür');
 function yükselt1(){
     counterEl.textContent = counter +=1;
     console.log("yükselt");
+
+    localStorage.setItem('counter',counter)
+    console.log(typeof(counter))
 }
 
 function düsür1(){
     counterEl.textContent = counter -=1;
     console.log("düsür");
+
+    localStorage.setItem('counter',counter)
+    console.log(typeof(counter))
 }
 
 yükselt.addEventListener('click', yükselt1)
