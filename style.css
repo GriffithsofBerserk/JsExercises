@@ -1,22 +1,21 @@
 .baslik{
-    align-items: center;
-    position:absolute;
+    justify-content:center;
     display:flex;
-    right:40rem;
 }
 .grades{
-    position:absolute;
-    top:20%;
-    left:40rem;
+    display:flex;
+    justify-content:center;
     align-items:center;
+    margin-top:2.5rem;
 }
 .counters{
-    position:absolute;
-    top:30%;
-    left:40rem;
+    display:flex;
+    justify-content:center;
+    margin-top:2.5rem;
     align-items:center;
 }
 .counter{
-    position:relative;
-    left:2.5rem;
+    display:flex;
+    justify-content:center;
+    margin-top:2.5rem;
 }
