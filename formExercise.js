@@ -2,12 +2,27 @@
 
 let userFormDOM = document.querySelector('#userForm')
 userFormDOM.addEventListener('submit', formHandler)
+let alertDOM = document.querySelector('#alert')
+
+const alertFunc = (title,message) => `<div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>${title}</strong> ${message}
+  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+</div>`
 
 function formHandler(event){
     event.preventDefault()
     const USER_NAME = document.querySelector('#username')
     const SCORE = document.querySelector('#score')
-    addItem(USER_NAME.value, SCORE.value)
+    if(USER_NAME.value && SCORE.value){
+        addItem(USER_NAME.value, SCORE.value)
+        USER_NAME = ""
+        SCORE = ""
+    }else{
+        alertDOM.innerHTML = alertFunc(
+            "Hatalı giriş!",
+            "Kullanıcı adını ve not bilgisini lütfen giriniz!")
+    }
+    
 }
 
 let userListDOM = document.querySelector('#userList')
