@@ -15,8 +15,8 @@ function formHandler(event){
     const SCORE = document.querySelector('#score')
     if(USER_NAME.value && SCORE.value){
         addItem(USER_NAME.value, SCORE.value)
-        USER_NAME = ""
-        SCORE = ""
+        USER_NAME.value = ""
+        SCORE.value = ""
     }else{
         alertDOM.innerHTML = alertFunc(
             "Hatalı giriş!",
