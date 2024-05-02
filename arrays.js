@@ -22,3 +22,8 @@ console.log("lastItem = ",lastitem,"dizi : ",dizi)
 
 let firstitem = dizi.shift()
 console.log("firstItem = ",firstitem,"dizi : ",dizi)
+
+let a = dizi.toString() //dizi elemanlarını stringe cevirme
+console.log(a)
+
+console.log(dizi.join(" --- ")) // elemanların arasına çekilmis cizgi
