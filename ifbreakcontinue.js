@@ -13,3 +13,10 @@ for(;index < names.length;index++){
     ifuserListDOM.appendChild(liDOM)
 
 }
+
+let userNm = ""
+
+while(!userNm){
+    userNm = prompt("Kullanıcı adınızı girin!")
+    console.log(userNm)
+}
