@@ -1,4 +1,4 @@
-const PRODUCTS = ["MiC","CaBLE","SPEAKER","DeSKtOP PC","SerVEr","MOUSE","KeyBoaRD"]
+const PRODUCTS = ["Mic","Cable","Speaker","Desktop PC","Server","Mouse","Keyboard"]
 
 const NEW_PRODUCTS = PRODUCTS.filter(item => item.length > 5) //uzunlukları 5ten buyukleri filtreleme
 console.log(NEW_PRODUCTS)
@@ -12,11 +12,3 @@ const USERS = [
 
 const ACTIVE_USERS = USERS.filter(active => active.isActive === true)
 console.log(ACTIVE_USERS)
-
-const ProdObj = PRODUCTS.map(prod => {
-    return{
-        userName: prod, shortName: `${prod[0]}.`,newName: `${prod[0].toUpperCase()}${prod.slice(1).toLowerCase()}`
-    }
-})
-
-console.log(ProdObj)
