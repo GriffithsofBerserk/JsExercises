@@ -12,3 +12,11 @@ const USERS = [
 
 const ACTIVE_USERS = USERS.filter(active => active.isActive === true)
 console.log(ACTIVE_USERS)
+
+const ProdObj = PRODUCTS.map(prod => {
+    return{
+        userName: prod, shortName: `${prod[0]}.`,newName: `${prod[0].toUpperCase()}${prod.slice(1).toLowerCase()}`
+    }
+})
+
+console.log(ProdObj)
