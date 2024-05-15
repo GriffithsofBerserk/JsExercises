@@ -31,3 +31,11 @@ let user1 = {
 }
 
 console.log(user1.longName())
+
+
+let score = [100,200,300,400]
+
+let [score1,score2, ...otherscore] = score
+
+console.log(score1," : score1")
+console.log(otherscore)
